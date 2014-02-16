@@ -27,7 +27,7 @@ public class TestProcessingVideoOpenCV extends PApplet {
 	}
 	
 	public void draw() {
-		this.frame.setTitle(frameRate+"");
+		this.frame.setTitle("FPS : "+frameRate);
 		if (this.video.available()) {
 		    this.video.read();
 			opencv.loadImage(video);
